@@ -10,4 +10,7 @@ module "vpc" {
 
   enable_nat_gateway = true
   enable_vpn_gateway = true
+  tags = {
+    DoNotDestroy = true
+  }
 }
