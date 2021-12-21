@@ -16,5 +16,5 @@ output "vpc_id" {
 }
 
 output "default_route_table_id" {
-  value = module.vpc.default_vpc_default_route_table_id
+  value = module.vpc.vpc_main_route_table_id
 }
