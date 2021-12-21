@@ -10,9 +10,4 @@ module "vpc" {
 
   enable_nat_gateway = true
   enable_vpn_gateway = true
-
-  tags = {
-    Terraform   = "true"
-    Environment = "development"
-  }
 }

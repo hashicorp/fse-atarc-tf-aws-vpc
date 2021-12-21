@@ -1,6 +1,9 @@
 terraform {
   required_version = "~> 1.0.11"
-  backend "local" {
-    path = "./terraform.tfstate"
+  backend "remote" {
+    organization = "PublicSector-ATARC"
+    workspaces {
+      name = "fse-tf-atarc-aws-vpc"
+    }
   }
 }
