@@ -20,9 +20,9 @@ output "default_route_table_id" {
 }
 
 output "private_sub_cidrs" {
-  value = module.vpc.private_subnets
+  value = var.private_sub_cidrs
 }
 
 output "public_sub_cidrs" {
-  value = module.vpc.public_subnets
+  value = var.public_sub_cidrs
 }
