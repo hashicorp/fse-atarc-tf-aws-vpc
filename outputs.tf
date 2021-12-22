@@ -18,3 +18,11 @@ output "vpc_id" {
 output "default_route_table_id" {
   value = module.vpc.vpc_main_route_table_id
 }
+
+output "private_sub_cidrs" {
+  value = var.private_subnets
+}
+
+output "public_sub_cidrs" {
+  value = var.public_subnets
+}
