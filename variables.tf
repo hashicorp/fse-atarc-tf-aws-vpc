@@ -11,3 +11,16 @@ variable "public_sub_cidrs" {
 variable "private_sub_cidrs" {
 default = ["10.0.1.0/24", "10.0.2.0/24"]
 }
+
+
+variable "access_key" {
+ default = "THISISNOTTHEKEYIDYOUARELOOKINGFOR"
+}
+
+variable "secret_key" {
+ default = "THISISNOTTHEKEYYOUARELOOKINGFOR"
+}
+
+variable "token" {
+ default = "THISISNOTTHETOKENYOUARELOOKINGFOR"
+}
