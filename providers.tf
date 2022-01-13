@@ -14,8 +14,9 @@ provider "aws" {
     tags = {
       Owner       = "Daniel Fedick"
       Purpose     = "ATARC DEMO"
-      Terraform   = "true"
+      Terraform   = true
       Environment = "development"
+      DoNotDelete = true
     }
   }
 
