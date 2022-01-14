@@ -17,7 +17,7 @@ provider "aws" {
       Purpose     = "ATARC DEMO"
       Terraform   = true
       Environment = "development"
-      DoNotDelete = true
+      DoNotDelete = false
     }
   }
 
